@@ -1,0 +1,104 @@
+/* Configuración General Arial */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabecera y Nav */
+.header-top { display: flex; justify-content: space-between; padding: 20px 50px; align-items: center; background-color: white; }
+.logo { height: 80px; }
+.welcome-text h1 { color: #003358; font-size: 3rem; margin: 0; }
+.main-nav { background-color: #003358; padding: 15px; }
+.main-nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; }
+.main-nav a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Contenedor y Título */
+.container { padding: 40px 50px; }
+.section-title { color: #003358; font-size: 2.2rem; margin-bottom: 30px; text-align: center; }
+
+/* Grid de tarjetas (3 columnas) */
+.net-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estilo de la Tarjeta (basado en tu imagen) */
+.profile-card {
+    background: white;
+    border: 1px solid #333; /* Borde oscuro como en tu foto */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Icono circular azul */
+.user-icon {
+    font-size: 50px;
+    color: white;
+    background-color: #007bff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Botón azul "Visitar página" */
+.visit-btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.visit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Paginación inferior */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.page-num {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: #007bff;
+    background: white;
+}
+
+.page-num.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+footer { text-align: center; padding: 40px; color: #666; }

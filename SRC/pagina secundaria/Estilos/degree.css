@@ -1,0 +1,69 @@
+/* Configuración General Arial */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera idéntica */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+.logo { height: 80px; }
+.welcome-text h1 { color: #003358; font-size: 3rem; margin: 0; }
+.main-nav { background-color: #003358; padding: 15px; }
+.main-nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; }
+.main-nav a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Estructura de Secciones */
+.container { padding: 20px 50px; }
+.section-title { color: #003358; font-size: 2.5rem; margin: 40px 0 20px 0; }
+
+.flex-container {
+    display: flex;
+    gap: 30px;
+    align-items: stretch; /* Obliga a la imagen a estirarse para igualar al texto */
+    margin-bottom: 60px;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-column {
+    flex: 1;
+}
+
+/* Cuadros Grises */
+.box-gray {
+    background-color: #e9ecef;
+    padding: 25px;
+    border-radius: 30px;
+    color: #003358;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-gray h3 { margin: 0 0 10px 0; font-size: 1.4rem; }
+.box-gray p { text-align: justify; line-height: 1.5; margin: 0; }
+
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+footer { text-align: center; padding: 40px; color: #666; }
