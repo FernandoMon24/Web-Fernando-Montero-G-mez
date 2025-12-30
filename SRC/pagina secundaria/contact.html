@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fernando Montero</title>
+    <link rel="stylesheet" href="Estilos/contact.css">
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="logo-container">
+            <img src="../Imagenes/download.webp" alt="Logo UFV" class="logo">
+        </div>
+        <div class="welcome-text">
+            <h1>Contacto</h1>
+            <p>¿Hablamos?</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="topic.html">Temática</a></li>
+            <li><a href="about.html">Acerca de mí</a></li>
+            <li><a href="degree.html">Grado</a></li>
+            <li><a href="net.html">Red</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-title">Envíame un mensaje</h2>
+        
+        <div class="contact-wrapper">
+            <form class="contact-form box-gray">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar mensaje</button>
+            </form>
+
+            <div class="info-column">
+                <div class="box-gray">
+                    <h3>Ubicación</h3>
+                    <p>Universidad Francisco de Vitoria<br>Ctra. Pozuelo-Majadahonda, KM 1.800<br>28223 Pozuelo de Alarcón, Madrid.</p>
+                </div>
+                <div class="box-gray">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a Viernes: 09:00 - 18:00<br>Estaré encantado de responderte lo antes posible.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fernando Montero Gómez</p>
+    </footer>
+
+</body>
+</html>
